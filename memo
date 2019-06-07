@@ -1,0 +1,11 @@
+docker-compose build
+
+docker-compose run app sh -c "django-admin startproject app ."
+
+docker-compose run app sh -c "python manage.py startapp blog"
+
+docker-compose up
+
+
+user: yaoyon
+password: 123456
